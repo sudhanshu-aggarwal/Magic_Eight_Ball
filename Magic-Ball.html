@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Eight Ball</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background-image: url("background-image.jpg");
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+
+            background-size: cover;
+        }
+        input{
+            background: transparent;
+            /* border: 2px; */
+            height: 40px;
+            width: 30%;
+            margin: 12% 3%;
+            color: #c9c9c9;
+            font-size: larger;
+            padding-left: 2%;
+        }
+        label{
+            color: #c9c9c9;
+            font-size: x-large;
+            margin-left: 15%;
+        }
+        p{
+            color: #c9c9c9;
+            font-size: xx-large;
+            margin-left: 15%;
+            transform: translateX(0%);
+            /* animation-name: txt;
+            animation-duration: 1.5s; */
+        }
+        button{
+            width: 200px;
+            height: 7vh;
+            background: transparent;
+            color:  #c9c9c9;
+            font-size: larger;
+        }
+        #next{
+            margin-top: 8%;
+            margin-left:  40%;
+            display: none;
+        }
+        img{
+            width: 20%;
+            height: 45%;
+            transform: translateX(-100%);
+            position: fixed;
+            bottom: 9%;
+            z-index: 1;
+            /* transition-property: transform;
+            transition-duration: 3s; */
+        }
+
+        .m1{
+            animation-name: meteoroid;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        /* @keyframes meteoroid{
+            from {transform: translateX(-100%);}
+            to {transform: translateX(500%);}
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <label for="in1">Enter Your Name:</label>
+        <input type="text" name="in1" id="in1">
+        <button id="pg1">Enter</button>
+        <p id="answer1"></p>
+        <a href="Magic-Ball2.html" style="text-decoration: none;"><button id="next">Enter Planet</button></a>
+        <img src="meteor1.png" alt="meteor" id="meteor" >
+    </main>
+    
+    
+    <script src="Magic-Ball.js">
+    
+    </script>
+</body>
+</html>

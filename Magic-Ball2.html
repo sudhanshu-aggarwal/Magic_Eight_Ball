@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Question</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background-image: url("background-image.jpg");
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        input{
+            background: transparent;
+            height: 40px;
+            width: 50%;
+            margin-top: 4%;
+            margin-left: 14%;
+            color: #c9c9c9;
+            font-size: larger;
+            padding-left: 2%;
+        }
+        label{
+            font-size: 64px;
+            color: #c9c9c9;
+            margin-left: 14%;
+        }
+        #err{
+            width: 200px;
+            height: 7vh;
+            background: transparent;
+            color:  #c9c9c9;
+            font-size: larger;
+            margin-left: 4%;
+        }
+        #answer2{
+            color: #c9c9c9;
+            font-size: xx-large;
+            margin-left: 30%;
+            margin-top: 10%;
+            transform: translateX(0%);
+        }
+        #ta{
+            width: 200px;
+            height: 7vh;
+            background: transparent;
+            color:  #c9c9c9;
+            font-size: larger;
+            margin-top: 10%;
+            margin-left: 53%;
+        }
+        #ext{
+            width: 200px;
+            height: 7vh;
+            background: transparent;
+            color:  #c9c9c9;
+            font-size: larger;
+        }
+        img{
+            width: 20%;
+            height: 45%;
+            transform: translateX(-520%);
+            position: fixed;
+            bottom: 18%;
+            z-index: 1;
+            /* transition-property: transform;
+            transition-duration: 3s; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <label for="in2" id="tp"></label><br>
+        <input type="text" name="in2" id="in2">
+        <button id="err">Ask</button>
+        <p id="answer2"></p>
+        <a href="Magic-Ball2.html"><button id="ta">Ask Again</button></a>
+        <a href="Magic-Ball.html"><button id="ext">Exit Planet</button></a>
+        <img src="meteor1.png" alt="meteor" id="meteor">
+    </main>
+
+    <script src="Magic-Ball2.js"></script>
+</body>
+</html>
